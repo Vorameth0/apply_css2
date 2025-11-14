@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column; /* เรียงลงเป็นแนวตั้ง */
+  justify-content: center; /* กรอบทั้งหมดอยู่ตรงกลางแนวตั้ง */
+  align-items: center;     /* กรอบทั้งหมดอยู่ตรงกลางแนวนอน */
+  min-height: 100vh;
+  gap: 20px; /* ช่องว่างระหว่างกรอบ */
+  padding: 40px 0;
+}
+
+/* กรอบทั่วไป */
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px; /* กรอบเท่ากัน */
+}
+
+/* Me Card */
+.me-card h2 {
+  color: #005f99;
+  margin-bottom: 10px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #005f99;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: #005f99;
+  font-size: 2em;
+  margin: 0 0 20px 0;
+}
+
+/* Achievement Card */
+.achievement-card h2 {
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Hobbies Card */
+.hobbies-card h2 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.hobbies {
+  list-style-type: square;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.hobbies li {
+  margin: 5px 0;
+}
+
+/* Skills Card */
+.skills-card h2 {
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.skills {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.skills th, .skills td {
+  border: 1px solid #2d3436;
+  padding: 8px;
+  text-align: left;
+}
+
+.skills th {
+  background-color: #dfe6e9;
+}
